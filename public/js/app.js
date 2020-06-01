@@ -1,4 +1,4 @@
-console.log("Client side javascript file is loaded!! ")
+
 
 /*fetch('http://puzzle.mead.io/puzzle').then((response)=>{//here it is parsing the url and after the url is passed then the callback is called .
     response.json().then((data)=>{//here response.json() is when you get the json object then do the following
