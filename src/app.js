@@ -1,6 +1,7 @@
 const express = require('express') //npm module
 const path = require('path') //core module
 const app = express()
+const port = process.env.PORT || 3000
 const hbs = require('hbs')
 
 //console.log(__dirname) //to display the directory (absolute path of the directory)
@@ -103,6 +104,6 @@ app.get('*',(req,res)=>{ //if the user puts an url other than the above one then
         errorMessage : 'Page Not found'
     })
 })
-app.listen(3000,()=>{
-    console.log("Server is up on 3000 port ")
+app.listen(port,()=>{
+    console.log("Server is up on port :"+port)
 })
